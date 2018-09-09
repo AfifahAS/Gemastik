@@ -1,11 +1,9 @@
 import pandas as pd
 import numpy as np
-#import unicodedata
 import mysql.connector
 from tqdm import tqdm
 import json
 import re
-#import str
 
 def WordEmbedding(word,cursor):
     sql = "select vec from term where term like %s;"
